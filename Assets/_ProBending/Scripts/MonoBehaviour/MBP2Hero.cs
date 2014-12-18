@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class MoBoHero : MoBo_Base {
+public class MBP2Hero : MB_Base {
 
-	const string TAG = "MBHero";
+	const string TAG = "MBP2Hero";
 
 	void Start () {
 

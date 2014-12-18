@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class MoBoWorld : MoBo_Base {
+public class MBP1World : MBP1_Base {
 
 	void Start () {
 	

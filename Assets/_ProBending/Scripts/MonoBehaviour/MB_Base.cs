@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public abstract class MoBo_Base : MonoBehaviour {
+public abstract class MB_Base : MonoBehaviour {
 
 	public void TurnOn() {
 		gameObject.SetActive(true);

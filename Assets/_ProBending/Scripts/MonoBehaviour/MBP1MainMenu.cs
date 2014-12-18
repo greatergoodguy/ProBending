@@ -1,7 +1,7 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
-public class MoBoMainMenu : MoBo_Base {
+public class MBP1MainMenu : MBP1_Base {
 
 	public delegate void OnPlayListener();
 	public event OnPlayListener onPlayListener = () => {};
