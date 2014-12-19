@@ -15,12 +15,12 @@ public class _MasterScript : MonoBehaviour {
 		world.TurnOff();
 		
 		mainMenu = GameObject.Find("Main Menu").GetComponent<MBP1MainMenu>();
-		mainMenu.onPlayListener += () => {
+		mainMenu.actionPlay += () => {
 			UtilLogger.Log(TAG, "Play");
 			world.TurnOn();
 		};
 		
-		mainMenu.onQuitListener += () => {
+		mainMenu.actionQuit += () => {
 			UtilLogger.Log(TAG, "Quit");
 			world.TurnOff();
 		};
