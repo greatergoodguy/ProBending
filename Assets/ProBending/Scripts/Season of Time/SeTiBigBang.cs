@@ -3,6 +3,18 @@ using System.Collections;
 
 public class SeTiBigBang : SeTi_Base {
 
+	private SeTiBigBang() {}
+
+	public override void Enter () {
+		base.Enter ();
+
+		MBP1MainMenu mainMenu = GuildOfMB.MBP1MainMenu;
+		mainMenu.TurnOff();
+
+		MBP1World world = GuildOfMB.MBP1World;
+		world.TurnOff();
+	}
+
 	public override bool IsFinished () {
 		return true;
 	}
@@ -12,7 +24,6 @@ public class SeTiBigBang : SeTi_Base {
 	}
 
 	private static SeTiBigBang instance;
-	private SeTiBigBang() {}
 	public static SeTiBigBang Instance {
 		get 
 		{
