@@ -3,6 +3,8 @@ using System.Collections;
 
 public class SeTiPlay : SeTi_Base {
 
+	private static readonly string TAG = "SeTiPlay";
+
 	MBP1World world;
 	MBP1Controller controller;
 
@@ -16,7 +18,8 @@ public class SeTiPlay : SeTi_Base {
 
 		world.TurnOn();
 		controller.actionKeyDownEscape += () => {
-
+			UtilLogger.Log(TAG, "Enter() - actionKeyDownEscape");
+			world.MBP2Menu.ToggleOnOff();
 		};
 	}
 

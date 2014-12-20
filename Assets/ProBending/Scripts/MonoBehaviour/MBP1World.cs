@@ -4,6 +4,11 @@ using System.Collections;
 public class MBP1World : MBP1_Base {
 
 	MBP2Menu mbp2Menu;
+	public MBP2Menu MBP2Menu {
+		get {
+			return mbp2Menu;
+		}
+	}
 
 	void Start () {
 		transform.FindChild("Continent").gameObject.SetActive(true);
@@ -12,9 +17,6 @@ public class MBP1World : MBP1_Base {
 	}
 
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Escape)) {
-			mbp2Menu.ToggleOnOff();
-		}
 	}
 
 }

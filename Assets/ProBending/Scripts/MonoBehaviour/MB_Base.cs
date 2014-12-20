@@ -3,9 +3,13 @@ using System.Collections;
 
 public abstract class MB_Base : MonoBehaviour {
 
+	void Start() {
+		TurnOn();
+	}
+
 	public bool IsOn {
 		get {
-			return gameObject.activeSelf;
+			return gameObject.activeInHierarchy;
 		}
 	}
 
@@ -18,10 +22,13 @@ public abstract class MB_Base : MonoBehaviour {
 	}
 
 	public void ToggleOnOff() {
+		UtilLogger.Log("MB_Base", "ToggleOnOff()");
 		if(IsOn) {
+			UtilLogger.Log("MB_Base", "ToggleOnOff(): IsOn");
 			TurnOff();
 		}
 		else {
+			UtilLogger.Log("MB_Base", "ToggleOnOff(): IsOff");
 			TurnOn();
 		}
 	}
